@@ -1,5 +1,5 @@
 // Buat audio sekali untuk semua halaman
-let audio = new Audio("./img/Floricienta.mp3");
+let audio = new Audio("./img/lagu.mp3");
 audio.loop = true;
 
 // Ambil posisi waktu sebelumnya
@@ -36,4 +36,5 @@ setInterval(() => {
   }
 }, 500);
 ");
+
 

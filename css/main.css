@@ -1348,3 +1348,37 @@ body {
   -webkit-animation-play-state: paused !important;
           animation-play-state: paused !important;
 }/*# sourceMappingURL=main.css.map */
+.photos {
+  position: absolute;
+  bottom: 100vmin; /* Atur tinggi foto di atas bunga */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 3vmin;
+  z-index: 200; /* Pastikan di atas bunga */
+}
+
+.photo {
+  width: 20vmin; /* Atur ukuran foto */
+  height: 30vmin;
+  object-fit: cover;
+  border-radius: 1vmin;
+  animation: float 3s ease-in-out infinite alternate;
+}
+
+/* Animasi mengambang halus */
+.photo--1 {
+  animation-delay: 0s;
+}
+.photo--2 {
+  animation-delay: 0.5s;
+}
+.photo--3 {
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0% { transform: translateY(0) rotate(-1deg); }
+  50% { transform: translateY(-2vmin) rotate(1deg); }
+  100% { transform: translateY(0) rotate(-1deg); }
+}
